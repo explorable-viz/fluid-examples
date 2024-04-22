@@ -13,8 +13,7 @@ body:
       Please provide details of the publication in question and the data sources.
 - type: markdown
   attributes:
-    value: |
-      "## Publication"
+    value: "## Publication"
 - type: input
   id: publication-title
   attributes:
@@ -49,8 +48,7 @@ body:
     required: true
 - type: markdown
   attributes:
-    value: |
-      "## Data"
+    value: "## Data"
 - type: textarea
   id: data-links
   attributes:
@@ -103,8 +101,7 @@ body:
     required: true
 - type: markdown
   attributes:
-    value: |
-      "## Source code"
+    value: "## Source code"
 - type: textarea
   id: code-links
   attributes:
@@ -126,8 +123,7 @@ body:
     required: true
 - type: markdown
   attributes:
-    value: |
-      "# Visualisations"
+    value: "## Visualisations"
 - type: textarea
   id: visualisations-summary
   attributes:
@@ -145,8 +141,7 @@ body:
     required: false
 - type: markdown
   attributes:
-    value: |
-      "## Other comments"
+    value: "## Other comments"
 - type: textarea
   id: other-comments
   attributes:
