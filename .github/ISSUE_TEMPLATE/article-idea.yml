@@ -7,147 +7,147 @@ assignees:
   - RaoOfPhysics
   - rolyp
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Please provide details of the publication in question and the data sources.
-  - type: markdown
-    attributes:
-      value: |
-        "## Publication"
-  - type: input
-    id: publication-title
-    attributes:
-      label: Publication title
-      description: Please provide the publication’s title
-    validations:
-      required: false
-  - type: input
-    id: publication-link
-    attributes:
-      label: Link to publication
-      description: Please provide a link to the publication
-    validations:
-      required: true
-  - type: dropdown
-    attributes:
-      label: Licence for publication
-      description: Please choose the appropriate licence
-      multiple: false
-      options:
-        - All rights reserved
-        - CC BY
-        - CC BY-SA
-        - CC BY-NC
-        - CC BY-NC-SA
-        - CC BY-ND
-        - CC BY-NC-ND
-        - CC0
-        - Other open licence
-    validations:
-      required: true
-  - type: markdown
-    attributes:
-      value: |
-        "## Data"
-  - type: textarea
-    id: data-links
-    attributes:
-      label: Link to data used in the publication
-      description: Please provide a link to the data used; add each link to a new line
-      placeholder: "Please write “N/A” if data are not available"
-    validations:
-      required: true
-  - type: dropdown
-    id: data-availability
-    attributes:
-      label: Data availability
-      description: Please choose the appropriate statement"
-      multiple: false
-      options:
-        - Not available
-        - Proprietary data, available to purchase
-        - "Available upon request (licence unknown)"
-        - Available publicly under an open-access licence
-        - Available publicly, all rights reserved
-    validations:
-      required: true
-  - type: textarea
-    id: data-contact
-    attributes:
-      label: Contact for data
-      description: Please provide the names for those responsible for the data
-      placeholder: Please DO NOT include personal contact information
-    validation:
-      required: true
-  - type: input
-    id: data-topic
-    attributes:
-      label: Dataset topic(s)
-      description: Please list the topic(s) for the dataset used in the publication
-    validations:
-      required: true
-  - type: dropdown
-    id: data-size
-    attributes:
-      label: Dataset size
-      description: Please choose the appropriate value for the total data used
-      multiple: false
-      options:
-        - Less than 1024 kB
-        - Less than 1024 MB
-        - Less than 1024 GB
-        - More than 1024 GB
-    validations:
-      required: true
-  - type: markdown
-    attributes:
-      value: |
-        "## Source code"
-  - type: textarea
-    id: code-links
-    attributes:
-      label: Link to code used for the publication
-      description: Please provide a link to the code used; add each link to a new line
-      placeholder: "Please write “N/A” if code is not available"
-    validations:
-      required: true
-  - type: dropdown
-    id: data-availability
-    attributes:
-      label: Data availability
-      description: Please choose the appropriate statement
-      multiple: false
-      options:
-        - All rights reserved
-        - Any open-source licence
-    validations:
-      required: true
-  - type: markdown
-    attributes:
-      value: |
-        "# Visualisations"
-  - type: textarea
-    id: visualisations-summary
-    attributes:
-      label: "Summary of visualisation(s)"
-      description: "Please provide a summary of the visualisation(s) used in the publication"
-      placeholder: "Visualisation type(s) (e.g. bar charts, scatter plots) and any associated tables shown"
-    validations:
-      required: true
-  - type: textarea
-    id: visualisation-new-features
-    attributes:
-      label: New features required by Fluid
-      description: "Do we need any new features in Fluid to implement the visualisation type(s)?"
-    validations:
-      required: false
-  - type: markdown
-    attributes:
-      value: |
-        "## Other comments"
-  - type: textarea
-    id: other-comments
-    attributes:
-      label: Any other comments?
-      description: Please leave any relevant notes not captured by the above form
+- type: markdown
+  attributes:
+    value: |
+      Please provide details of the publication in question and the data sources.
+- type: markdown
+  attributes:
+    value: |
+      "## Publication"
+- type: input
+  id: publication-title
+  attributes:
+    label: Publication title
+    description: Please provide the publication’s title
+  validations:
+    required: false
+- type: input
+  id: publication-link
+  attributes:
+    label: Link to publication
+    description: Please provide a link to the publication
+  validations:
+    required: true
+- type: dropdown
+  attributes:
+    label: Licence for publication
+    description: Please choose the appropriate licence
+    multiple: false
+    options:
+      - All rights reserved
+      - CC BY
+      - CC BY-SA
+      - CC BY-NC
+      - CC BY-NC-SA
+      - CC BY-ND
+      - CC BY-NC-ND
+      - CC0
+      - Other open licence
+  validations:
+    required: true
+- type: markdown
+  attributes:
+    value: |
+      "## Data"
+- type: textarea
+  id: data-links
+  attributes:
+    label: Link to data used in the publication
+    description: Please provide a link to the data used; add each link to a new line
+    placeholder: "Please write “N/A” if data are not available"
+  validations:
+    required: true
+- type: dropdown
+  id: data-availability
+  attributes:
+    label: Data availability
+    description: Please choose the appropriate statement"
+    multiple: false
+    options:
+      - Not available
+      - Proprietary data, available to purchase
+      - "Available upon request (licence unknown)"
+      - Available publicly under an open-access licence
+      - Available publicly, all rights reserved
+  validations:
+    required: true
+- type: textarea
+  id: data-contact
+  attributes:
+    label: Contact for data
+    description: Please provide the names for those responsible for the data
+    placeholder: Please DO NOT include personal contact information
+  validation:
+    required: true
+- type: input
+  id: data-topic
+  attributes:
+    label: Dataset topic(s)
+    description: Please list the topic(s) for the dataset used in the publication
+  validations:
+    required: true
+- type: dropdown
+  id: data-size
+  attributes:
+    label: Dataset size
+    description: Please choose the appropriate value for the total data used
+    multiple: false
+    options:
+      - Less than 1024 kB
+      - Less than 1024 MB
+      - Less than 1024 GB
+      - More than 1024 GB
+  validations:
+    required: true
+- type: markdown
+  attributes:
+    value: |
+      "## Source code"
+- type: textarea
+  id: code-links
+  attributes:
+    label: Link to code used for the publication
+    description: Please provide a link to the code used; add each link to a new line
+    placeholder: "Please write “N/A” if code is not available"
+  validations:
+    required: true
+- type: dropdown
+  id: data-availability
+  attributes:
+    label: Data availability
+    description: Please choose the appropriate statement
+    multiple: false
+    options:
+      - All rights reserved
+      - Any open-source licence
+  validations:
+    required: true
+- type: markdown
+  attributes:
+    value: |
+      "# Visualisations"
+- type: textarea
+  id: visualisations-summary
+  attributes:
+    label: "Summary of visualisation(s)"
+    description: "Please provide a summary of the visualisation(s) used in the publication"
+    placeholder: "Visualisation type(s) (e.g. bar charts, scatter plots) and any associated tables shown"
+  validations:
+    required: true
+- type: textarea
+  id: visualisation-new-features
+  attributes:
+    label: New features required by Fluid
+    description: "Do we need any new features in Fluid to implement the visualisation type(s)?"
+  validations:
+    required: false
+- type: markdown
+  attributes:
+    value: |
+      "## Other comments"
+- type: textarea
+  id: other-comments
+  attributes:
+    label: Any other comments?
+    description: Please leave any relevant notes not captured by the above form
