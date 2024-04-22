@@ -134,10 +134,11 @@ body:
     description: Please choose the appropriate value for the total data used
     multiple: false
     options:
-      - Less than 1024 kB
-      - Less than 1024 MB
-      - Less than 1024 GB
-      - More than 1024 GB
+      - (Small) Less than 1 MB
+      - (Medium) Less than 1 GB
+      - (Large) Less than 1 TB
+      - (Very large) More than 1 TB
+      - Unknown
   validations:
     required: true
 - type: markdown
