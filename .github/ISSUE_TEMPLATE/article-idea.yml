@@ -28,6 +28,39 @@ body:
     description: Please provide a link to the publication
   validations:
     required: true
+- type: input
+  id: publisher
+  attributes:
+    label: Name of journal/magazine/publisher
+    description: Please name the publisher in question
+  validations:
+    required: true
+- type: dropdown
+  id: publication-year
+  attributes:
+    label: Year of publication
+    description: Please choose the year
+    multiple: false
+    options:
+      - 2024
+      - 2023
+      - 2022
+      - 2021
+      - 2020
+      - 2019
+      - 2018
+      - 2017
+      - 2016
+      - 2015
+      - 2014
+      - 2013
+      - 2012
+      - 2011
+      - 2001–2010
+      - 1991–2000
+      - 1990 and before
+  validations:
+    required: true
 - type: dropdown
   id: publication-licence
   attributes:
@@ -66,7 +99,7 @@ body:
     options:
       - Not available
       - Proprietary data, available to purchase
-      - "Available upon request (licence unknown)"
+      - Available upon request (licence unknown)
       - Available publicly under an open-access licence
       - Available publicly, all rights reserved
   validations:
@@ -84,6 +117,14 @@ body:
   attributes:
     label: Dataset topic(s)
     description: Please list the topic(s) for the dataset used in the publication
+  validations:
+    required: true
+- type: input
+  id: data-format
+  attributes:
+    label: Data format(s)
+    description: Please note the data format(s) used, if known
+    placeholder: "Please write “Unknown” if that’s the case"
   validations:
     required: true
 - type: dropdown
@@ -121,22 +162,40 @@ body:
       - Any open-source licence
   validations:
     required: true
+- type: dropdown
+  id: code-language
+  attributes:
+    label: Programming language
+    description: Please only choose the primary language if more than one are used
+    multiple: false
+    options:
+      - "C/C++"
+      - Java
+      - JavaScript
+      - Julia
+      - MATLAB
+      - Python
+      - R
+      - SAS
+      - Scala
+      - SQL
+      - Other
 - type: markdown
   attributes:
     value: "## Visualisations"
 - type: textarea
   id: visualisations-summary
   attributes:
-    label: "Summary of visualisation(s)"
-    description: "Please provide a summary of the visualisation(s) used in the publication"
-    placeholder: "Visualisation type(s) (e.g. bar charts, scatter plots) and any associated tables shown"
+    label: Summary of visualisation(s)
+    description: Please provide a summary of the visualisation(s) used in the publication
+    placeholder: Visualisation type(s) (e.g. bar charts, scatter plots) and any associated tables shown
   validations:
     required: true
 - type: textarea
   id: visualisation-new-features
   attributes:
     label: New features required by Fluid
-    description: "Do we need any new features in Fluid to implement the visualisation type(s)?"
+    description: Do we need any new features in Fluid to implement the visualisation type(s)?
   validations:
     required: false
 - type: markdown
