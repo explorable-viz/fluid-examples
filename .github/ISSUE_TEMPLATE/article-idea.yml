@@ -30,6 +30,7 @@ body:
   validations:
     required: true
 - type: dropdown
+  id: publication-licence
   attributes:
     label: Licence for publication
     description: Please choose the appropriate licence
@@ -78,7 +79,7 @@ body:
     label: Contact for data
     description: Please provide the names for those responsible for the data
     placeholder: Please DO NOT include personal contact information
-  validation:
+  validations:
     required: true
 - type: input
   id: data-topic
