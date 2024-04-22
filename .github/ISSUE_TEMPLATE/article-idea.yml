@@ -114,9 +114,9 @@ body:
   validations:
     required: true
 - type: dropdown
-  id: data-availability
+  id: code-availability
   attributes:
-    label: Data availability
+    label: Code availability
     description: Please choose the appropriate statement
     multiple: false
     options:
