@@ -77,6 +77,7 @@ body:
       - CC BY-NC-ND
       - CC0
       - Other open licence
+      - Unknown
   validations:
     required: true
 - type: markdown
@@ -102,6 +103,7 @@ body:
       - Available upon request (licence unknown)
       - Available publicly under an open-access licence
       - Available publicly, all rights reserved
+      - Mix of open-access and proprietary datasets
   validations:
     required: true
 - type: textarea
@@ -161,6 +163,7 @@ body:
     options:
       - All rights reserved
       - Any open-source licence
+      - Unknown
   validations:
     required: true
 - type: dropdown
