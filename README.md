@@ -1,6 +1,6 @@
 # fluid-examples
 
-Primarily Achintya and Roly will work on this with some possible involvement from Joe Bond (PhD student at Bristol) and Dominic Orchard (ICCS Co-Director and Lecturer at Kent). From July we will probably have 1-2 interns. (In parallel, Roly/Joe will also be working on a new design of the core dependency-tracking approach but this is unlikely to make it into this iteration of Fluid Examples.)
+Primarily Achintya and Roly will work on this with some possible involvement from Joe Bond (PhD student at Bristol) and Dominic Orchard (ICCS Co-Director and Lecturer at Kent). From July we will probably have 2 (maybe 3) interns. (In parallel, Roly/Joe will also be working on a new design of the core dependency-tracking approach but this is unlikely to make it into this iteration of Fluid Examples.)
 
 ## Expected outputs
 
