@@ -1,15 +1,12 @@
 # fluid-examples
 
-Primarily Achintya and Roly will work on this with some possible involvement from Joe Bond (PhD student at Bristol) and Dominic Orchard (ICCS Co-Director and Lecturer at Kent). From July we will probably have 2 (maybe 3) interns. (In parallel, Roly/Joe will also be working on a new design of the core dependency-tracking approach but this is unlikely to make it into this iteration of Fluid Examples.)
+Primarily Achintya and Roly will work on this with some possible involvement from Tomas Petricek (Assistant Professor, Charles University), Joe Bond (PhD student at Bristol) and Dominic Orchard (ICCS Co-Director and Lecturer at Kent). From July we will probably have 2 (maybe 3) interns. In parallel, Roly/Joe will also be working on a new design of the core dependency-tracking approach but this is unlikely to make it into this iteration of Fluid Examples.
+
+[GitHub Project page](https://github.com/orgs/explorable-viz/projects/7/views/1)
 
 ## Expected outputs
 
 3 mini articles hosted on the web, each with 2-3 interactive visualisations written in Fluid. Based on existing research and chosen strategically to develop relationships/collaborations. Published with DOIs and perhaps using something like the Distill template (distill.pub).
-
-Some ideas:
-- VESRI (Virtual Earth System Research Institute) paper
-- Environmental Data Science or other Cambridge University Press publication
-- Some work affiliated to Cabot Institute for the Environment, University of Bristol
 
 It would be nice if the mini-articles also illustrated something that has a "reveal" when you explore the provenance of the data. For example BBC articles about "clean" hydroelectric power being a significant source of methane emissions, and "clean" power stations burning wood chips sourced from pristine rainforest in British Colombia. Of course these aren't "reveals" that our infrastructure is able to magically bring about -- that takes data journalism -- but it should be able to make it easier to present this kind of information in a way that is "revealing" (maybe).
 
@@ -17,7 +14,7 @@ It would be nice if the mini-articles also illustrated something that has a "rev
 
 - 6 months initially (would be nice to extend but will depend on funding).
 - Roly busy for first 3 months with POPL paper (deadline 10 July) and two presentations (Bristol Digital Futures Institute workshop, 10 May and ICCS Summer School, 10 July).
-- From around 10 July we should have 2 students (Chau Crawford and Haofei Chen, both University of Edinburgh) as residential interns at Cambridge. I'm currenty planning for both of these internships to involve implementing new Fluid features to improve the 3 mini-articles and tooling around them.
+- From 8 July we should have 2 students (Chau Crawford and Haofei Chen, both University of Edinburgh) as residential interns at Cambridge. Both of these will involve implementing new Fluid features to improve the 3 mini-articles and tooling around them.
 
 Given the above I propose we split the project into roughly 2 halves, as outlined below.
 
