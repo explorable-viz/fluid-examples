@@ -30,7 +30,7 @@
                     </p>
 
                     <p>
-                        Roly Perera<sup><small>1, 2</small></sup> <em>&</em> Achintya Rao<sup><small>1, 3</small></sup><br>
+                        Roly Perera<small>1,2</small> <em>&</em> Achintya Rao<small>1, 3</small><br>
                         <small>
                             <br>
                             ¹ Institute of Computing for Climate Science, University of Cambridge <br>
@@ -71,9 +71,9 @@
                     <section data-markdown>
                         <script type="text/template">
                         * … came with “layers”?
-                            * Of underlying data <!-- .element: class="fragment" -->
-                            * Of related visualisations <!-- .element: class="fragment" -->
-                            * Of dynamic narratives <!-- .element: class="fragment" -->
+                            * of underlying data <!-- .element: class="fragment" -->
+                            * of related visualisations <!-- .element: class="fragment" -->
+                            * of dynamic narratives <!-- .element: class="fragment" -->
                         </script>
                     </section>
 
@@ -101,7 +101,7 @@
                     </section>
 
                     <section data-markdown>
-                        ## Importance of provenance
+                        ## Trust and accountability
                     </section>
 
                     <section data-markdown>
@@ -114,8 +114,7 @@
 
                     <section data-markdown>
                         <script type="text/template">
-                            ## Importance of provenance
-                            * “Clean” hydropower responsible for equivalent of one billion tonnes of CO₂ emissions annually (mostly CH₄) <!-- .element: class="fragment" -->
+                            * “Clean” hydropower responsible for equivalent of one billion tonnes of CO₂ emissions annually (mostly CH₄)
                             * Company receiving subsidies (₤B) for green energy burns wood chips from pristine Canadian rainforests <!-- .element: class="fragment" -->
                         </script>
                     </section>
@@ -128,16 +127,34 @@
                     </section>
 
                     <section data-markdown>
-                        # Explorable explanations
+                        ## Justifying policies
                     </section>
 
                     <section data-background-iframe="https://www.economist.com/graphic-detail/coronavirus-excess-deaths-tracker#skip-to-content-target" data-background-interactive>
+                    </section>
+
+                    <section data-markdown>
+                        ## Explaining and educating
+                    </section>
+
+                    <section data-background-iframe="https://distill.pub/2021/understanding-gnns/" data-background-interactive>
+                    </section>
+
+                    <section data-markdown>
+                        ## State of play today
+                    </section>
+
+                    <section data-markdown>
+                        ![IPCC AR6 WG1 Fig 6.19](https://www.ipcc.ch/report/ar6/wg1/downloads/figures/IPCC_AR6_WGI_Figure_6_19.png)
+                    </section>
+
+                    <section data-background-iframe="https://raoofphysics.github.io/IPCC-AR6-WG1-Ch6-Fig19#reproduction-of-graphics" data-background-interactive>
                     </section>
                 </section>
 
                 <section>
                     <section data-markdown>
-                        # Target groups for Fluid
+                        # Target users for Fluid
                     </section>
 
                     <section data-markdown>
@@ -206,81 +223,31 @@
                         <script type="text/template">
                             ## On the spectrum of users…
 
-                            * Researchers <!-- .element: class="fragment" -->
-                            * Journalists <!-- .element: class="fragment" -->
+                            * Researchers (peer review) <!-- .element: class="fragment" -->
+                            * Data journalists <!-- .element: class="fragment" -->
                             * Policymakers <!-- .element: class="fragment" -->
                             * Publishers <!-- .element: class="fragment" -->
                         </script>
                     </section>
                 </section>
 
-                <section>
-                    <section data-markdown>
-                        # Interactive essays
-                    </section>
-
-                    <section data-markdown>
-                        [PLACEHOLDER FOR (static?) EXAMPLE]
-                    </section>
-
-                    <section data-markdown>
-                        * Data journalism
-                        * Peer review
-                        * Data-driven policies
-                    </section>
-
-                    <section data-markdown>
-                        * “Saveable” hashed visualisations
-                    </section>
-                </section>
-
-                <section>
-                    <section data-markdown>
-                        # Authoring with Fluid
-                    </section>
-
-                    <section data-markdown>
-                        ## Current workflow
-
-                        * [COMING]
-                    </section>
-
-                    <section data-markdown>
-                        ## Desired workflow
-
-                        * Fluid kernel for Jupyter
-                        * Authoring with Quarto
-                        * GitHub Actions?
-                    </section>
-                </section>
-
-                <section>
-                    <section data-markdown>
-                        # Making fluid examples
-                    </section>
-
-                    <section data-markdown>
-                        ## Reproducing IPCC reports with open data
-                    </section>
-
-                    <section data-markdown>
-                        ![IPCC AR6 WG1 Fig 6.19](https://www.ipcc.ch/report/ar6/wg1/downloads/figures/IPCC_AR6_WGI_Figure_6_19.png)
-                    </section>
-
-                    <section data-background-iframe="https://raoofphysics.github.io/IPCC-AR6-WG1-Ch6-Fig19#reproduction-of-graphics" data-background-interactive>
-                    </section>
-
-                    <section data-markdown>
-                        ## Forging collaborations with researchers
-                    </section>
-
-                    <section data-background-iframe="https://www.nature.com/articles/s41561-024-01417-1.pdf" data-background-interactive>
-                    </section>
-                </section>
+                <!-- Might be useful to have this but doesn't seem to belong anywhere yet
+                <section data-markdown>
+                   * “Saveable” hashed visualisations
+                </section> -->
 
                 <section>
                     <section data-markdown>
                         # Fluid, today
+                    </section>
+
+                    <section data-background-iframe="http://127.0.0.1:8080/renewables/" data-background-interactive>
+                    </section>
+
+                    <section data-background-iframe="http://127.0.0.1:8080/energy-scatter/" data-background-interactive>
+                    </section>
+
+                    <section data-background-iframe="http://127.0.0.1:8080/convolution/" data-background-interactive>
                     </section>
 
                     <section data-markdown>
@@ -292,6 +259,45 @@
 
                     <section data-background-iframe="https://f.luid.org" data-background-interactive>
                     </section>
+                </section>
+
+                <section>
+                    <section data-markdown>
+                        # Authoring with Fluid
+                    </section>
+
+                    <section data-markdown>
+                        Focus so far has been on UX (user experience)
+
+                        What's needed from <emph>authoring</emph> point of view?
+
+                        * Command-line publishing tool -- currently need to install PureScript and write a small program!
+                        * Markdown front-end
+                        * ...
+                    </section>
+
+                    <section data-markdown>
+                        What about the language itself?
+
+                        * Purely functional (no side-effects)
+                        * Records, lists, dictionaries, 2D arrays
+                        * Graphics library based on d3.js
+
+                        What's missing?
+                        * Modules/imports
+                        * Data sources (load from file/URL/DB)
+                        * Syntax for datatype definitions
+                    </section>
+                </section>
+
+                <section>
+                    <section data-markdown>
+                        ## How can we help you tell a story with your data?
+                    </section>
+
+                    <!---
+                    <section data-background-iframe="https://www.nature.com/articles/s41561-024-01417-1.pdf" data-background-interactive>
+                    </section>-->
                 </section>
 			</div>
 		</div>
