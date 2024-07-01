@@ -45,23 +45,23 @@
                         # What is a picture worth?
                     </section>
 
-                    <section>
+                    <section data-transition="fade">
                         <div style="padding: 30%;"><iframe allowfullscreen="" src="mona-lisa.html" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"></iframe></div>
                     </section>
 
-                    <section data-markdown>
+                    <section data-markdown data-transition="fade">
                         ![Raphael’s version](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Sketch_of_the_Mona_Lisa_by_Raphael.jpg/428px-Sketch_of_the_Mona_Lisa_by_Raphael.jpg)
                     </section>
 
-                    <section data-markdown>
+                    <section data-markdown data-transition="fade">
                         ![Sapeck, La Joconde fumant la pipe](https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Sapeck-La_Joconde_fumant_la_pipe.jpg/399px-Sapeck-La_Joconde_fumant_la_pipe.jpg)
                     </section>
 
-                    <section data-markdown>
+                    <section data-markdown data-transition="fade">
                         ![Marguerite Agniel as Mona Lisa](https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Marguerite_Agniel_as_Mona_Lisa_by_Robert_Henri.jpg/384px-Marguerite_Agniel_as_Mona_Lisa_by_Robert_Henri.jpg)
                     </section>
 
-                    <section data-background-iframe="https://www.discoveringdavinci.com/mona-lisa" data-background-interactive>
+                    <section data-background-iframe="https://www.discoveringdavinci.com/mona-lisa" data-background-interactive data-transition="fade">
                     </section>
 
                     <section data-markdown>
@@ -112,11 +112,35 @@
                         <img src="https://i.imgur.com/7YvPkyF.png" alt="IPCC AR6 WG1 Fig. SPM.3 with data" width="80%">
                     </section>
 
-                    <section data-markdown>
-                        <script type="text/template">
-                            * “Clean” hydropower responsible for equivalent of one billion tonnes of CO₂ emissions annually (mostly CH₄)
-                            * Company receiving subsidies (₤B) for green energy burns wood chips from pristine Canadian rainforests <!-- .element: class="fragment" -->
-                        </script>
+                    <section>
+                        <style>
+                         .container{
+                             display: flex;
+                         }
+                         .col{
+                             flex: 1;
+                         }
+                        </style>
+
+                        <h3>Peeling back the layers</h3>
+
+                        <div class="container">
+
+                            <div class="col">
+                                <figure><img src="https://i.imgur.com/6wQBRab.png" style="width:60%">
+                                </figure>
+
+                                <small>Company receiving subsidies (₤B) for green energy burns wood chips from pristine Canadian rainforests</small>
+                            </div>
+
+                            <div class="col">
+                                <figure><img src="https://i.imgur.com/gAcDsRP.png" style="width:60%">
+                                </figure>
+
+                                <small>“Clean” hydropower responsible for equivalent of one billion tonnes of CO₂ emissions annually (mostly CH₄)</small>
+                            </div>
+
+                        </div>
                     </section>
 
                     <section data-markdown>
@@ -141,14 +165,92 @@
                     </section>
 
                     <section data-markdown>
-                        ## State of play today
+                        ## Caveat!
+
+                        Software cannot _solve_ underlying, systemic issues with research and policy, but it can help _present_ information in a revealing way.
+                    </section>
+                </section>
+
+                <section>
+                    <section data-markdown>
+                        # Fluid, today
+                    </section>
+
+                    <section data-background-iframe="http://127.0.0.1:8080/renewables/" data-background-interactive>
+                    </section>
+
+                    <section data-background-iframe="http://127.0.0.1:8080/energy-scatter/" data-background-interactive>
+                    </section>
+
+                    <section data-background-iframe="http://127.0.0.1:8080/convolution/" data-background-interactive>
                     </section>
 
                     <section data-markdown>
-                        ![IPCC AR6 WG1 Fig 6.19](https://www.ipcc.ch/report/ar6/wg1/downloads/figures/IPCC_AR6_WGI_Figure_6_19.png)
+                        <script type="text/template">
+                          ## Authoring with Fluid, today
+
+                          * Focus so far has been on the user experience (UX) for “consumers” <!-- .element: class="fragment" -->
+                          * What’s needed from authoring point of view? <!-- .element: class="fragment" -->
+                            * MVP: command-line publishing tool <!-- .element: class="fragment" -->
+                            * Currently need to install PureScript and write a small program! <!-- .element: class="fragment" -->
+                        </script>
                     </section>
 
-                    <section data-background-iframe="https://raoofphysics.github.io/IPCC-AR6-WG1-Ch6-Fig19#reproduction-of-graphics" data-background-interactive>
+                    <section data-markdown>
+                        <script type="text/template">
+                          ## What about the language itself?
+
+                          * Purely functional (no side-effects) <!-- .element: class="fragment" -->
+                          * Records, lists, dictionaries, 2D arrays <!-- .element: class="fragment" -->
+                          * Graphics library based on d3.js <!-- .element: class="fragment" -->
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                          ## What’s missing?
+
+                          * Modules/imports <!-- .element: class="fragment" -->
+                          * Data sources (load from file/URL/DB) <!-- .element: class="fragment" -->
+                          * Syntax for datatype definitions <!-- .element: class="fragment" -->
+                        </script>
+                    </section>
+                </section>
+
+                <section>
+                    <section data-markdown>
+                        # Fluid publications
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## What is an ideal Fluid publication?
+
+                            * Responsive format <!-- .element: class="fragment" -->
+                            * Interactive graphics and tables – Fluid’s USP <!-- .element: class="fragment" -->
+                            * Versioning information <!-- .element: class="fragment" -->
+                            * Pre-defined narrative, but one that can change/adapt <!-- .element: class="fragment" -->
+                            * Exporting link to user-modified version <!-- .element: class="fragment" -->
+
+<!-- Do not move the next line because it breaks the Markdown formatting -->
+[explorable-viz/fluid-examples: #10](https://github.com/explorable-viz/fluid-examples/discussions/10) <!-- .element: class="fragment" -->
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Future authoring… ?
+                            * Fluid kernel for Jupyter <!-- .element: class="fragment" -->
+                            * Authoring with Quarto (in Markdown) <!-- .element: class="fragment" -->
+                              ![Quarto publishing pipeline](https://quarto.org/docs/get-started/hello/images/qmd-how-it-works.png) <!-- .element: class="fragment" -->
+                            * GitHub Actions? <!-- .element: class="fragment" -->
+
+<!-- Do not move the next line because it breaks the Markdown formatting -->
+[explorable-viz/fluid-examples: #4](https://github.com/explorable-viz/fluid-examples/discussions/4) <!-- .element: class="fragment" -->
+
+<!-- Do not move the next line because it breaks the Markdown formatting -->
+[explorable-viz/fluid-examples: #5](https://github.com/explorable-viz/fluid-examples/discussions/5) <!-- .element: class="fragment" -->
+                        </script>
                     </section>
                 </section>
 
@@ -229,66 +331,47 @@
                             * Publishers <!-- .element: class="fragment" -->
                         </script>
                     </section>
-                </section>
 
-                <!-- Might be useful to have this but doesn't seem to belong anywhere yet
-                <section data-markdown>
-                   * “Saveable” hashed visualisations
-                </section> -->
-
-                <section>
                     <section data-markdown>
-                        # Fluid, today
-                    </section>
+                        <script type="text/template">
+                            ## Fluid for peer review
 
-                    <section data-background-iframe="http://127.0.0.1:8080/renewables/" data-background-interactive>
-                    </section>
+                            * “Saveable” hashed visualisations: persistent and shareable <!-- .element: class="fragment" -->
+                            * Modify visualisation &rarr; get new URI <!-- .element: class="fragment" -->
+                            * Steps taken are recorded and can be “replayed” <!-- .element: class="fragment" -->
 
-                    <section data-background-iframe="http://127.0.0.1:8080/energy-scatter/" data-background-interactive>
-                    </section>
-
-                    <section data-background-iframe="http://127.0.0.1:8080/convolution/" data-background-interactive>
+<!-- Do not move the next line because it breaks the Markdown formatting -->
+[explorable-viz/fluid-examples: #7](https://github.com/explorable-viz/fluid-examples/discussions/7) <!-- .element: class="fragment" -->
+                        </script>
                     </section>
                 </section>
 
                 <section>
                     <section data-markdown>
-                        # Authoring with Fluid
+                        # State of play today
                     </section>
 
                     <section data-markdown>
-                        Focus so far has been on UX (user experience)
-
-                        What's needed from <emph>authoring</emph> point of view?
-
-                        * Command-line publishing tool -- currently need to install PureScript and write a small program!
-                        * Fluid kernel for Jupyter
-                        * Authoring with Quarto, Markdown
-                        * GitHub Actions?
+                        ## Recreating figures with Fluid
                     </section>
 
                     <section data-markdown>
-                        What about the language itself?
-
-                        * Purely functional (no side-effects)
-                        * Records, lists, dictionaries, 2D arrays
-                        * Graphics library based on d3.js
-
-                        What's missing?
-                        * Modules/imports
-                        * Data sources (load from file/URL/DB)
-                        * Syntax for datatype definitions
+                        ![IPCC AR6 WG1 Fig 6.19](https://www.ipcc.ch/report/ar6/wg1/downloads/figures/IPCC_AR6_WGI_Figure_6_19.png)
                     </section>
-                </section>
 
-                <section>
+                    <section data-background-iframe="https://raoofphysics.github.io/IPCC-AR6-WG1-Ch6-Fig19#reproduction-of-graphics" data-background-interactive>
+                    </section>
+
+                    <section data-markdown>
+                        ## Weaving new stories from old
+                    </section>
+
+                    <section data-background-iframe="https://www.nature.com/articles/s41561-024-01417-1.pdf" data-background-interactive>
+                    </section>
+
                     <section data-markdown>
                         ## How can we help you tell a story with your data?
                     </section>
-
-                    <!---
-                    <section data-background-iframe="https://www.nature.com/articles/s41561-024-01417-1.pdf" data-background-interactive>
-                    </section>-->
                 </section>
 			</div>
 		</div>
