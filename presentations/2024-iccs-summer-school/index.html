@@ -96,9 +96,11 @@
                 </section>
 
                 <section>
+                    <!--
                     <section data-markdown>
                         # Motivating Problems
                     </section>
+                     -->
 
                     <section data-markdown>
                         ## Trust and accountability
@@ -110,6 +112,27 @@
 
                     <section>
                         <img src="https://i.imgur.com/7YvPkyF.png" alt="IPCC AR6 WG1 Fig. SPM.3 with data" width="80%">
+                    </section>
+
+                    <section data-markdown>
+                        ## Reproducing results
+                    </section>
+
+                    <section data-background-iframe="https://www.bmj.com/content/bmj/351/bmj.h4320.full.pdf">
+                    </section>
+
+                    <section data-markdown>
+                        ## Justifying policies
+                    </section>
+
+                    <section data-background-iframe="https://www.economist.com/graphic-detail/coronavirus-excess-deaths-tracker#skip-to-content-target" data-background-interactive>
+                    </section>
+
+                    <section data-markdown>
+                        ## Explaining and educating
+                    </section>
+
+                    <section data-background-iframe="https://distill.pub/2021/understanding-gnns/" data-background-interactive>
                     </section>
 
                     <section>
@@ -144,30 +167,9 @@
                     </section>
 
                     <section data-markdown>
-                        ## Reproducing results
-                    </section>
+                        Software alone can't fix systemic/political issues like these.
 
-                    <section data-background-iframe="https://www.bmj.com/content/bmj/351/bmj.h4320.full.pdf">
-                    </section>
-
-                    <section data-markdown>
-                        ## Justifying policies
-                    </section>
-
-                    <section data-background-iframe="https://www.economist.com/graphic-detail/coronavirus-excess-deaths-tracker#skip-to-content-target" data-background-interactive>
-                    </section>
-
-                    <section data-markdown>
-                        ## Explaining and educating
-                    </section>
-
-                    <section data-background-iframe="https://distill.pub/2021/understanding-gnns/" data-background-interactive>
-                    </section>
-
-                    <section data-markdown>
-                        ## Caveat!
-
-                        Software cannot _solve_ underlying, systemic issues with research and policy, but it can help _present_ information in a revealing way.
+                        But perhaps by changing expectations & norms about what &ldquo;open&rdquo; or &ldquo;transparent&rdquo; actually mean we can (slowly) generate structural change.
                     </section>
                 </section>
 
@@ -177,6 +179,7 @@
                     </section>
 
                     <section data-background-iframe="http://127.0.0.1:8080/renewables/" data-background-interactive>
+                        Content here as well?
                     </section>
 
                     <section data-background-iframe="http://127.0.0.1:8080/energy-scatter/" data-background-interactive>
@@ -389,10 +392,8 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-
 				preloadIframes: true,
-
-				// Learn about plugins: https://revealjs.com/plugins/
+            navigationMode: 'linear',
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom, RevealMath, RevealSearch ]
 			});
 		</script>
