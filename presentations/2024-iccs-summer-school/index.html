@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Fluid: data visualisations for the 21st century</title>
+		<title>Fluid: data visualisation for the 21st century</title>
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reset.min.css" integrity="sha512-Mjxkx+r7O/OLQeKeIBCQ2yspG1P5muhAtv/J+p2/aPnSenciZWm5Wlnt+NOUNA4SHbnBIE/R2ic0ZBiCXdQNUg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.css" integrity="sha512-0AUO8B5ll9y1ERV/55xq3HeccBGnvAJQsVGitNac/iQCLyDTGLUBMPqlupIWp/rJg0hV3WWHusXchEIdqFAv1Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -80,9 +80,9 @@
                     <section data-markdown>
                         <script type="text/template">
                         * … allowed _you_ to choose _your own_ adventure?
-                            * Explore individual elements <!-- .element: class="fragment" -->
-                            * Change the scope of the plots <!-- .element: class="fragment" -->
-                            * Identify source data <!-- .element: class="fragment" -->
+                            * explore individual elements <!-- .element: class="fragment" -->
+                            * change the scope of the plots <!-- .element: class="fragment" -->
+                            * identify source data <!-- .element: class="fragment" -->
                         </script>
                     </section>
 
@@ -96,22 +96,6 @@
                 </section>
 
                 <section>
-                    <section data-markdown>
-                        # Motivating Problems
-                    </section>
-
-                    <section data-markdown>
-                        ## Trust and accountability
-                    </section>
-
-                    <section data-markdown>
-                        ![IPCC AR6 WG1 Fig. SPM.3](https://www.ipcc.ch/report/ar6/wg1/downloads/figures/IPCC_AR6_WGI_SPM_Figure_3.png)
-                    </section>
-
-                    <section>
-                        <img src="https://i.imgur.com/7YvPkyF.png" alt="IPCC AR6 WG1 Fig. SPM.3 with data" width="80%">
-                    </section>
-
                     <section>
                         <style>
                          .container{
@@ -122,7 +106,7 @@
                          }
                         </style>
 
-                        <h3>Peeling back the layers</h3>
+                        <h3>Querying and questioning</h3>
 
                         <div class="container">
 
@@ -144,14 +128,33 @@
                     </section>
 
                     <section data-markdown>
-                        ## Reproducing results
+                        ## Understanding and evaluating
+                    </section>
+
+                    <section data-markdown>
+                        ![IPCC AR6 WG1 Fig. SPM.3](https://www.ipcc.ch/report/ar6/wg1/downloads/figures/IPCC_AR6_WGI_SPM_Figure_3.png)
+                    </section>
+
+                    <section>
+                        <img src="https://i.imgur.com/7YvPkyF.png" alt="IPCC AR6 WG1 Fig. SPM.3 with data" width="80%">
+                    </section>
+
+                    <section data-markdown>
+                        ## Reproducing and verifying
                     </section>
 
                     <section data-background-iframe="https://www.bmj.com/content/bmj/351/bmj.h4320.full.pdf">
                     </section>
 
                     <section data-markdown>
-                        ## Justifying policies
+                        ## Reusing and adapting
+                    </section>
+
+                    <section data-background-iframe="https://www.nature.com/articles/s41561-024-01417-1.pdf" data-background-interactive>
+                    </section>
+
+                    <section data-markdown>
+                        ## Justifying and criticising
                     </section>
 
                     <section data-background-iframe="https://www.economist.com/graphic-detail/coronavirus-excess-deaths-tracker#skip-to-content-target" data-background-interactive>
@@ -165,194 +168,7 @@
                     </section>
 
                     <section data-markdown>
-                        ## Caveat!
-
-                        Software cannot _solve_ underlying, systemic issues with research and policy, but it can help _present_ information in a revealing way.
-                    </section>
-                </section>
-
-                <section>
-                    <section data-markdown>
-                        # Fluid, today
-                    </section>
-
-                    <section data-background-iframe="http://127.0.0.1:8080/renewables/" data-background-interactive>
-                    </section>
-
-                    <section data-background-iframe="http://127.0.0.1:8080/energy-scatter/" data-background-interactive>
-                    </section>
-
-                    <section data-background-iframe="http://127.0.0.1:8080/convolution/" data-background-interactive>
-                    </section>
-
-                    <section data-markdown>
-                        <script type="text/template">
-                          ## Authoring with Fluid, today
-
-                          * Focus so far has been on the user experience (UX) for “consumers” <!-- .element: class="fragment" -->
-                          * What’s needed from authoring point of view? <!-- .element: class="fragment" -->
-                            * MVP: command-line publishing tool <!-- .element: class="fragment" -->
-                            * Currently need to install PureScript and write a small program! <!-- .element: class="fragment" -->
-                        </script>
-                    </section>
-
-                    <section data-markdown>
-                        <script type="text/template">
-                          ## What about the language itself?
-
-                          * Purely functional (no side-effects) <!-- .element: class="fragment" -->
-                          * Records, lists, dictionaries, 2D arrays <!-- .element: class="fragment" -->
-                          * Graphics library based on d3.js <!-- .element: class="fragment" -->
-                        </script>
-                    </section>
-
-                    <section data-markdown>
-                        <script type="text/template">
-                          ## What’s missing?
-
-                          * Modules/imports <!-- .element: class="fragment" -->
-                          * Data sources (load from file/URL/DB) <!-- .element: class="fragment" -->
-                          * Syntax for datatype definitions <!-- .element: class="fragment" -->
-                        </script>
-                    </section>
-                </section>
-
-                <section>
-                    <section data-markdown>
-                        # Fluid publications
-                    </section>
-
-                    <section data-markdown>
-                        <script type="text/template">
-                            ## What is an ideal Fluid publication?
-
-                            * Responsive format <!-- .element: class="fragment" -->
-                            * Interactive graphics and tables – Fluid’s USP <!-- .element: class="fragment" -->
-                            * Versioning information <!-- .element: class="fragment" -->
-                            * Pre-defined narrative, but one that can change/adapt <!-- .element: class="fragment" -->
-                            * Exporting link to user-modified version <!-- .element: class="fragment" -->
-
-<!-- Do not move the next line because it breaks the Markdown formatting -->
-[explorable-viz/fluid-examples: #10](https://github.com/explorable-viz/fluid-examples/discussions/10) <!-- .element: class="fragment" -->
-                        </script>
-                    </section>
-
-                    <section data-markdown>
-                        <script type="text/template">
-                            ## Future authoring… ?
-                            * Fluid kernel for Jupyter <!-- .element: class="fragment" -->
-                            * Authoring with Quarto (in Markdown) <!-- .element: class="fragment" -->
-                              ![Quarto publishing pipeline](https://quarto.org/docs/get-started/hello/images/qmd-how-it-works.png) <!-- .element: class="fragment" -->
-                            * GitHub Actions? <!-- .element: class="fragment" -->
-
-<!-- Do not move the next line because it breaks the Markdown formatting -->
-[explorable-viz/fluid-examples: #4](https://github.com/explorable-viz/fluid-examples/discussions/4) <!-- .element: class="fragment" -->
-
-<!-- Do not move the next line because it breaks the Markdown formatting -->
-[explorable-viz/fluid-examples: #5](https://github.com/explorable-viz/fluid-examples/discussions/5) <!-- .element: class="fragment" -->
-                        </script>
-                    </section>
-                </section>
-
-                <section>
-                    <section data-markdown>
-                        # Target users for Fluid
-                    </section>
-
-                    <section data-markdown>
-                        <script type="text/template">
-                            ## Producers &xharr; Consumers
-
-                            ## Authors &xharr; Readers <!-- .element: class="fragment" -->
-                        </script>
-                    </section>
-
-                    <section data-markdown>
-                        <script type="text/template">
-                            ## Authors &xharr; Readers
-
-                            * Is a spectrum <!-- .element: class="fragment" -->
-                            * Roles will blur <!-- .element: class="fragment" -->
-                        </script>
-                    </section>
-
-                    <section data-markdown>
-                        <script type="text/template">
-                            ### Authors…
-
-                            * Proficiency with technology <!-- .element: class="fragment" -->
-                            * Willingness to use it <!-- .element: class="fragment" -->
-                            * May have own workflows <!-- .element: class="fragment" -->
-                        </script>
-                    </section>
-
-                    <section data-markdown>
-                        <script type="text/template">
-                            ### Authors…
-
-                            * What are their incentives to use Fluid? <!-- .element: class="fragment" -->
-                            * Will need documentation and examples <!-- .element: class="fragment" -->
-                            * Will want comparison with R/Python <!-- .element: class="fragment" -->
-
-<!-- Do not move the next line because it breaks the Markdown formatting -->
-[explorable-viz/fluid-examples: #8](https://github.com/explorable-viz/fluid-examples/discussions/8) <!-- .element: class="fragment" -->
-                        </script>
-                    </section>
-
-                    <section data-markdown>
-                        <script type="text/template">
-                            ### Readers…
-
-                            * Won’t want to know the innards of Fluid <!-- .element: class="fragment" -->
-                            * Expect fast-to-update, accessible, intuitive interface <!-- .element: class="fragment" -->
-                            * Will need to work on mobile devices <!-- .element: class="fragment" -->
-                        </script>
-                    </section>
-
-                    <section data-markdown>
-                        <script type="text/template">
-                            ### Readers…
-
-                            * How do they know they can interact with the visualisation? <!-- .element: class="fragment" -->
-                            * Can narratives update based on user choices? <!-- .element: class="fragment" -->
-
-<!-- Do not move the next line because it breaks the Markdown formatting -->
-[explorable-viz/fluid-examples: #9](https://github.com/explorable-viz/fluid-examples/discussions/9) <!-- .element: class="fragment" -->
-                        </script>
-                    </section>
-
-                    <section data-markdown>
-                        <script type="text/template">
-                            ## On the spectrum of users…
-
-                            * Researchers (peer review) <!-- .element: class="fragment" -->
-                            * Data journalists <!-- .element: class="fragment" -->
-                            * Policymakers <!-- .element: class="fragment" -->
-                            * Publishers <!-- .element: class="fragment" -->
-                        </script>
-                    </section>
-
-                    <section data-markdown>
-                        <script type="text/template">
-                            ## Fluid for peer review
-
-                            * “Saveable” hashed visualisations: persistent and shareable <!-- .element: class="fragment" -->
-                            * Modify visualisation &rarr; get new URI <!-- .element: class="fragment" -->
-                            * Steps taken are recorded and can be “replayed” <!-- .element: class="fragment" -->
-
-<!-- Do not move the next line because it breaks the Markdown formatting -->
-[explorable-viz/fluid-examples: #7](https://github.com/explorable-viz/fluid-examples/discussions/7) <!-- .element: class="fragment" -->
-                        </script>
-                    </section>
-                </section>
-
-                <section>
-                    <section data-markdown>
-                        # State of play today
-                    </section>
-
-                    <section data-markdown>
-                        ## Recreating figures with Fluid
+                        ## State of play today
                     </section>
 
                     <section data-markdown>
@@ -363,14 +179,9 @@
                     </section>
 
                     <section data-markdown>
-                        ## Weaving new stories from old
-                    </section>
+                        Software alone can't fix structural or political issues or enforce best practices.
 
-                    <section data-background-iframe="https://www.nature.com/articles/s41561-024-01417-1.pdf" data-background-interactive>
-                    </section>
-
-                    <section data-markdown>
-                        ## How can we help you tell a story with your data?
+                        But by resetting expectations about what &ldquo;open&rdquo; or &ldquo;transparent&rdquo; actually mean, maybe we can (slowly) generate structural change.
                     </section>
                 </section>
 			</div>
@@ -389,10 +200,7 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-
 				preloadIframes: true,
-
-				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom, RevealMath, RevealSearch ]
 			});
 		</script>
