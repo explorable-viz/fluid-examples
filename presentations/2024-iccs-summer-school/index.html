@@ -96,14 +96,39 @@
                 </section>
 
                 <section>
-                    <!--
-                    <section data-markdown>
-                        # Motivating Problems
+                    <section>
+                        <style>
+                         .container{
+                             display: flex;
+                         }
+                         .col{
+                             flex: 1;
+                         }
+                        </style>
+
+                        <h3>Trusting and questioning</h3>
+
+                        <div class="container">
+
+                            <div class="col">
+                                <figure><img src="https://i.imgur.com/6wQBRab.png" style="width:60%">
+                                </figure>
+
+                                <small>Company receiving subsidies (₤B) for green energy burns wood chips from pristine Canadian rainforests</small>
+                            </div>
+
+                            <div class="col">
+                                <figure><img src="https://i.imgur.com/gAcDsRP.png" style="width:60%">
+                                </figure>
+
+                                <small>“Clean” hydropower responsible for equivalent of one billion tonnes of CO₂ emissions annually (mostly CH₄)</small>
+                            </div>
+
+                        </div>
                     </section>
-                     -->
 
                     <section data-markdown>
-                        ## Trust and accountability
+                        ## Understanding and evaluating
                     </section>
 
                     <section data-markdown>
@@ -115,14 +140,21 @@
                     </section>
 
                     <section data-markdown>
-                        ## Reproducing results
+                        ## Reproducing and verifying
                     </section>
 
                     <section data-background-iframe="https://www.bmj.com/content/bmj/351/bmj.h4320.full.pdf">
                     </section>
 
                     <section data-markdown>
-                        ## Justifying policies
+                        ## Reusing and adapting
+                    </section>
+
+                    <section data-background-iframe="https://www.nature.com/articles/s41561-024-01417-1.pdf" data-background-interactive>
+                    </section>
+
+                    <section data-markdown>
+                        ## Justifying and criticising
                     </section>
 
                     <section data-background-iframe="https://www.economist.com/graphic-detail/coronavirus-excess-deaths-tracker#skip-to-content-target" data-background-interactive>
@@ -134,6 +166,17 @@
 
                     <section data-background-iframe="https://distill.pub/2021/understanding-gnns/" data-background-interactive>
                     </section>
+
+                    <section data-markdown>
+                        ## State of play today
+                    </section>
+
+                    <section data-markdown>
+                        ![IPCC AR6 WG1 Fig 6.19](https://www.ipcc.ch/report/ar6/wg1/downloads/figures/IPCC_AR6_WGI_Figure_6_19.png)
+                    </section>
+
+                    <section data-background-iframe="https://raoofphysics.github.io/IPCC-AR6-WG1-Ch6-Fig19#reproduction-of-graphics" data-background-interactive>
+                    </section>
                 </section>
 
                 <section>
@@ -142,7 +185,6 @@
                     </section>
 
                     <section data-background-iframe="http://127.0.0.1:8080/renewables/" data-background-interactive>
-                        Content here as well?
                     </section>
 
                     <section data-background-iframe="http://127.0.0.1:8080/energy-scatter/" data-background-interactive>
@@ -307,62 +349,9 @@
 
                 <section>
                     <section data-markdown>
-                        # State of play today
-                    </section>
+                        Software alone can't fix structural or political issues or enforce best practices.
 
-                    <section data-markdown>
-                        ## Recreating figures with Fluid
-                    </section>
-
-                    <section data-markdown>
-                        ![IPCC AR6 WG1 Fig 6.19](https://www.ipcc.ch/report/ar6/wg1/downloads/figures/IPCC_AR6_WGI_Figure_6_19.png)
-                    </section>
-
-                    <section data-background-iframe="https://raoofphysics.github.io/IPCC-AR6-WG1-Ch6-Fig19#reproduction-of-graphics" data-background-interactive>
-                    </section>
-
-                    <section data-markdown>
-                        ## Weaving new stories from old
-                    </section>
-
-                    <section data-background-iframe="https://www.nature.com/articles/s41561-024-01417-1.pdf" data-background-interactive>
-                    </section>
-
-                    <section>
-                        <style>
-                         .container{
-                             display: flex;
-                         }
-                         .col{
-                             flex: 1;
-                         }
-                        </style>
-
-                        <h3>Peeling back the layers</h3>
-
-                        <div class="container">
-
-                            <div class="col">
-                                <figure><img src="https://i.imgur.com/6wQBRab.png" style="width:60%">
-                                </figure>
-
-                                <small>Company receiving subsidies (₤B) for green energy burns wood chips from pristine Canadian rainforests</small>
-                            </div>
-
-                            <div class="col">
-                                <figure><img src="https://i.imgur.com/gAcDsRP.png" style="width:60%">
-                                </figure>
-
-                                <small>“Clean” hydropower responsible for equivalent of one billion tonnes of CO₂ emissions annually (mostly CH₄)</small>
-                            </div>
-
-                        </div>
-                    </section>
-
-                    <section data-markdown>
-                        Software alone can't fix systemic/political issues like these.
-
-                        But perhaps by resetting expectations about what &ldquo;open&rdquo; or &ldquo;transparent&rdquo; actually mean we can (slowly) generate structural change.
+                        But by resetting expectations about what &ldquo;open&rdquo; or &ldquo;transparent&rdquo; actually mean maybe we can (slowly) generate structural change.
                     </section>
 
                     <section data-markdown>
@@ -386,7 +375,6 @@
 			Reveal.initialize({
 				hash: true,
 				preloadIframes: true,
-            navigationMode: 'linear',
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom, RevealMath, RevealSearch ]
 			});
 		</script>
