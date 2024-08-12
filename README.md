@@ -4,9 +4,12 @@ Collaborators:
 - Achintya Rao (UWE/Cambridge)
 - Roly Perera (Cambridge/UoB)
 - Tomas Petricek (Charles University)
-- Colin Crawford (summer intern, Edinburgh)
-- Haofei Chen (summer intern, Edinburgh)
-- Hana Iza Kim (summer intern, Cambridge)
+
+Interns:
+- Colin Crawford (Edinburgh)
+- Haofei Chen (Edinburgh)
+- Hana Iza Kim (Cambridge)
+- Thomas Frith (Cambridge)
 
 In parallel, Roly and Joe Bond will also be working on a new design of the core dependency-tracking approach but this is unlikely to make it into this iteration of Fluid Examples.
 
